@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function repeat(callback, cnt) {
+        for (let i = 0; i < cnt; i++) {
+          callback();
+        }
+      }
+
+      let userInput = prompt('반복할 횟수를 입력해주세요', '');
+      let number = Number(userInput);
+
+      repeat(function () {
+        alert('수행중');
+      }, number);
+    </script>
+  </head>
+  <body></body>
+</html>
